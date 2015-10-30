@@ -1,11 +1,14 @@
 # 参考
 
 - [前端开发规范手册 by @Aaaaaashu](https://github.com/Aaaaaashu/Front-End-Style-Guide)  
+- [Code Guide by @AlloyTeam](http://alloyteam.github.io/CodeGuide/)
+- [通过分析github代码库总结出来的工程师代码书写习惯](http://sideeffect.kr/popularconvention)  
 - [百度EFE团队开发规范](https://github.com/ecomfe/spec)  
 - [JavaScript规范 by @adamlu](https://github.com/adamlu/javascript-style-guide)  
 - [Amaze UI](http://amazeui.org)  
 - [最佳编码实践 by @KISSY](http://docs.kissyui.com/1.4/docs/html/tutorials/style-guide/index.html)  
 - [js-the-right-way - Javascript最佳编码实践](https://github.com/braziljs/js-the-right-way)  
+- [17173前端开发团队通用规范文档](https://github.com/hiwanz/javascript-style-reference)
 - [书写具备一致风格、通俗易懂 JavaScript 的原则](https://github.com/rwaldron/idiomatic.js/blob/master/translations/zh_CN/readme.md)  
 - [Google JSON风格指南](https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md)  
 - [谷歌 Web 开发最佳实践手册](https://developers.google.com/web/fundamentals/getting-started/?hl=zh-cn)  
@@ -18,4 +21,6 @@
 - [JS函数式编程指南中文版](https://github.com/llh911001/mostly-adequate-guide-chinese)  
 - [Node.js 代码风格指南](https://github.com/dead-horse/node-style-guide)  
 - [git-style-guide](https://github.com/aseaday/git-style-guide)  
-- [转雅虎web前端网站优化34条军规](http://wangjunle23.blog.163.com/blog/static/117838171201310139372912/)
+- [转雅虎web前端网站优化34条军规](http://wangjunle23.blog.163.com/blog/static/117838171201310139372912/)  
+- [移动端前端开发规范](https://github.com/suning-wireless/Front-End-Standards)  
+- [一些常用的移动开发有关信息和常见问题解决方案](https://github.com/suning-wireless/Mobile-Web-Tech)  

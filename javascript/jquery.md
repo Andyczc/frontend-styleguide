@@ -214,4 +214,88 @@ $("#myLink")
 
 })(jQuery);
 ```
+
+- 在做长方法链时使用缩进.
+
+    ```javascript
+    // bad
+    $('#items').find('.selected').highlight().end().find('.open').updateCount();
+
+    // good
+    $('#items')
+      .find('.selected')
+        .highlight()
+        .end()
+      .find('.open')
+        .updateCount();
+
+    // bad
+    var leds = stage.selectAll('.led').data(data).enter().append('svg:svg').class('led', true)
+        .attr('width',  (radius + margin) * 2).append('svg:g')
+        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+        .call(tron.led);
+
+    // good
+    var leds = stage.selectAll('.led')
+        .data(data)
+      .enter().append('svg:svg')
+        .class('led', true)
+        .attr('width',  (radius + margin) * 2)
+      .append('svg:g')
+        .attr('transform', 'translate(' + (radius + margin) + ',' + (radius + margin) + ')')
+        .call(tron.led);
+    ```
+
+ ## <a name='jquery'>jQuery</a>
+
+  - 缓存jQuery查询
+
+    ```javascript
+    // bad
+    function setSidebar() {
+      $('.sidebar').hide();
+
+      // ...stuff...
+
+      $('.sidebar').css({
+        'background-color': 'pink'
+      });
+    }
+
+    // good
+    function setSidebar() {
+      var $sidebar = $('.sidebar');
+      $sidebar.hide();
+
+      // ...stuff...
+
+      $sidebar.css({
+        'background-color': 'pink'
+      });
+    }
+    ```
+
+  - 对DOM查询使用级联的 `$('.sidebar ul')` 或 `$('.sidebar ul')`，[jsPerf](http://jsperf.com/jquery-find-vs-context-sel/16)
+  - 对有作用域的jQuery对象查询使用 `find`
+
+    ```javascript
+    // bad
+    $('.sidebar', 'ul').hide();
+
+    // bad
+    $('.sidebar').find('ul').hide();
+
+    // good
+    $('.sidebar ul').hide();
+
+    // good
+    $('.sidebar > ul').hide();
+
+    // good (slower)
+    $sidebar.find('ul');
+
+    // good (faster)
+    $($sidebar[0]).find('ul');
+    ```   
+
 此 jQuery 插件模板出自：[jQuery Plugin Boilerplate, revisited](http://stefangabos.ro/jquery/jquery-plugin-boilerplate-revisited/)

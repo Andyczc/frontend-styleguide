@@ -1,16 +1,18 @@
 ## <a id="TOC">通用约定</a>
-
-  1. [文件](#File)
-  1. [结构](#Structure)
-    1. [缩进](#Indentation)
-    1. [空格](#Whitespace)
-    1. [换行](#NewLine)
-    1. [语句](#Statement)
-  1. [命名](#Naming)
-  1. [注释](#Comments)
-    1. [细节注释](#Comments-xj)
-
-### <a id="Comments">注释 
+  
+  1. [变量](#Array)
+  1. [条件表达式和等号](#Conditionals)
+  1. [循环](#)
+  1. [类型](#)
+  1. [字符串](#)
+  1. [对象](#)
+  1. [数组](#)
+  1. [函数](#)
+  1. [面向对象](#)
+  1. [动态特性](#)
+  1. [实用风格](#Practical-Style)
+  
+### <a id="Comments">注释 <a href="#TOC">[⬆]</a>
 **原则**
 - As short as possible（如无必要，勿增注释）：尽量提高代码本身的清晰性、可读性。
 - As long as necessary（如有必要，尽量详尽）：合理的注释、空行排版等，可以让代码更易阅读、更具美感。
@@ -83,8 +85,6 @@ function foo(p1, p2, p3) {
       return this;
     }
   ```
-
-<a href="#TOC">[⬆]</a>
 
 ### <a id="Naming">命名 <a href="#TOC">[⬆]</a>
 
